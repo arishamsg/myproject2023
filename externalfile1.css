@@ -1,0 +1,112 @@
+h1
+{
+  font-family: 'Kaushan Script', cursive;
+}
+h2,h3,h5
+{
+  font-family: 'Oswald', sans-serif;
+}
+h4,h6
+{
+  font-family: 'Oswald', sans-serif;
+}
+p
+{
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
+}
+nav ul li a
+{
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
+}
+tr td 
+{
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
+}
+
+a
+{
+  color: white;
+  text-decoration: none;
+}
+a:hover
+{
+  color:white;
+}
+div.container-fluid
+{
+
+}
+
+.nav
+{
+  background: linear-gradient(to right, #aa4b6b, #6b6b83, #3b8d99); 
+    height: 100px;
+    opacity: 0.9;
+    height: 100px !important;    
+}
+
+/* navbardrop */
+nav ul li:hover ul 
+{
+        display: block;
+        position: absolute;
+        background-color:white;
+        margin-top: 10px;
+        padding: 20px;
+        opacity: 0.9;
+}
+
+a.dropdown-item:hover{
+  background-color: maroon;
+  color: white;
+}
+nav ul li :hover 
+{
+  background-color:maroon;
+  border-radius: 20px;
+}
+nav ul
+{
+  padding: 10px;
+}
+a.nav-link
+{
+  color: white !important;
+}
+
+a.navbar-brand
+{
+color: white;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* lastpagebuttoncss */
+a.btn
+{
+  background-color: #3b8d99;
+  color: white;
+}
+/* lastpageicon */
+i.fa.btn
+{
+  background-color: lavender;
+  color: #3b8d99;
+}
+/* footercss */
+.section1
+{
+    color: white; 
+    background: linear-gradient(to right, #aa4b6b, #6b6b83, #3b8d99);
+}
+div.col-md-3.mt-2
+{
+  text-align: left;
+}
+div.copyright.text-center
+{
+  height: 40px;
+  font-size: larger;
+  padding-top: 8px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+}

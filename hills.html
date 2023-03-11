@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HillsTour - Book tour & travel packages PleasantTour.com  </title>
+    <link  rel="shortcut icon"  type="image/x-icon" href="./images/logo/My_project-1__2_-removebg-preview.png" style="width: 40px; height: 40px;" alt="Pleasant tour-Book tour & travel packages  PleasantTour.com ">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- iconlink -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <!-- maincards -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <!-- externalcssfile -->
+<link rel="stylesheet" href="externalfile1.css">
+<!-- fontlinkh1 -->
+<link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Kaushan+Script&family=Righteous&family=Sassy+Frass&family=Solitreo&display=swap" rel="stylesheet">
+<!-- fontlinkh2 -->
+<link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Kaushan+Script&family=Oswald&family=Righteous&family=Rock+Salt&family=Sassy+Frass&family=Solitreo&display=swap" rel="stylesheet">
+
+  <style>
+
+    /* maincards */
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: 'roboto' , sans-serif;
+        background-color: #F2F2F2;
+    }
+    h1{
+        text-align: center;
+        color: #333333;
+    }
+    .cardcontainer{
+        width: 350px;
+        height: 500px;
+        background-color: white;
+        margin-left: auto;
+        margin-right: auto;
+        transition: 0.3s;
+    }
+    .cardcontainer:hover{
+        box-shadow: 0 0 45px gray;
+    }
+    .photo{
+        height: 300px;
+        width: 100%;
+    }
+    .photo img{
+        height: 100%;
+        width: 100%;
+    }
+    .txt1{
+        margin: auto;
+        text-align: center;
+        font-size: 17px;
+    }
+    .content{
+        width: 80%;
+        height: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        top: -33px;
+    }
+    .photos{
+        width: 90px;
+        height: 30px;
+        background-color: #E74C3C;
+        color: white;
+        position: relative;
+        top: -30px;
+        padding-left: 10px;
+        font-size: 20px;
+    }
+    .txt4{
+        font-size:27px;
+        position: relative;
+        top: 33px;
+    }
+    .txt5{
+        position: relative;
+        top: 18px;
+        color: #E74C3C;
+        font-size: 23px;
+    }
+    .txt2{
+        position: relative;
+        top: 10px;
+    }
+    
+    .cardcontainer:hover 
+    {
+    transform: scale(1.1);
+    }
+
+    @keyframes move1{
+        0%{height: 300px}
+        100%{height: 200px}
+    }
+   
+    .footer1{
+        width: 80%;
+        height: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: white;
+        position: relative;
+        top: -15px;
+    }
+    .btn{
+        position: relative;
+        top: 20px;
+    }
+    #heart{
+        cursor: pointer;
+    }
+    .like{
+        float: right;
+        font-size: 22px;
+        position: relative;
+        top: 20px;
+        color: #333333;
+    }
+    .fa-gratipay{
+        margin-right: 10px;
+        transition: 0.5s;
+    }
+    .fa-gratipay:hover{
+        color: #E74C3C;
+    }
+    .txt3{
+        color: gray;
+        position: relative;
+        top: 18px;
+        font-size: 14px;
+    }
+    .comments{
+        float: right;
+        cursor: pointer;
+    }
+    .fa-clock, .fa-comments{
+        margin-right: 7px;
+    }
+
+.box
+{
+  width: 450px;
+  height: 350px;
+  background-color:black;
+  opacity: 0.6;
+  /* margin-top: 100px; */
+}
+    
+  </style>
+</head>
+<body>
+    
+  <div class="container-fluid">
+    <div class="row" style="background-color:darkred; color: white; height: 40px;">
+      <div class="col-md-10">
+        <h5 class="mt-1">New Year's Travel Deals: 2023 Adventure Begins! Up to 25% OFF </h5>
+      </div>
+  
+      <div class="col-md-2">
+  
+  
+        <a href="https://www.facebook.com/login/" target="_blank"><i class="fa-brands fa-facebook-f me-3 mt-2" style="color: white;"></i></a>
+        <a href="https://www.instagram.com/accounts/login/" target="_blank"><i class="fa-brands fa-instagram me-3 mt-1" style="color: white;"></i></a>
+        <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D" target="_blank"><i class="fa-brands fa-twitter me-3 mt-1" style=" color:white;"></i></a>
+        <a href="https://www.youtube.com/account" target="_blank"><i class="fa-brands fa-youtube me-3 mt-1" style=" color: white;"></i></a>
+  
+      </div>
+    </div>
+  </div>    
+  
+  <!-- navbar start -->
+  
+  <nav class="navbar  nav navbar-expand-lg sticky-top">
+    <!-- logo&name start-->
+  
+      <div class="container-fluid">
+          <nav class="navbar sticky-top" >
+              <div class="container-fluid ">
+  
+                <img src="./images/logo/My_project-1__2_-removebg-preview.png" alt="" width="60" height="60" class="d-inline-block align-text-top">
+                <a class="navbar-brand m-2" href="./index.html" style="font-family: 'Kaushan Script', cursive; font-size: xx-large;"> PleasantTour<small style="font-size:x-small;">.com</small> <br>
+                  </a> 
+                
+              </div>
+          </nav>
+  
+          <!-- navbuttons -->
+  
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" style="padding-right: 10px;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Destination</a> 
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+  
+                      <li><a class="dropdown-item" href="./pakistan.html" target="_blank">Pakistan</a></li>
+                      <li><a class="dropdown-item" href="./uae.html" target="_blank">United Arab Emirates</a></li>
+                      <li><a class="dropdown-item" href="./maldives.html" target="_blank">Maldives</a></li>
+                      <li><a class="dropdown-item" href="./Sigapore.html" target="_blank">Singapore</a></li>
+                      
+                    </ul></li>
+  
+                      <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" style="padding-right: 10px;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Adventure Style</a> 
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+      
+                          <li><a class="dropdown-item" href="./beaches.html" target="_blank">Beach Tours</a></li>
+                          <li><a class="dropdown-item" href="./hills.html" target="_blank">Hill Station</a></li>
+                          <li><a class="dropdown-item" href="./forts.html" target="_blank">Forts & Places </a></li>
+                        
+                       </ul>
+                      </li>
+  
+                          <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" style="padding-right: 10px;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                            Currencies</a> 
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          
+                              <li><a class="dropdown-item" href="./dollarpage.html" target="_blank">USD-$</a></li>                
+                            </ul>
+                            </li>
+  
+                            <li class="nav-item ">
+                              <a class="nav-link" style="padding-right: 10px;" href="./msword/pricelist.docx" id="" role="button" target="_blank">
+                                Price List</a></li>
+                   </ul>
+  
+          <!-- contactus&login -->
+  
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+               <a class="nav-link" href="./aboutus.html" target="_blank"> 
+                 <i class="fa-solid fa-pen"></i>
+                 About Us </a>
+            </li>
+  
+          
+               <li class="nav-item">
+                  <a class="nav-link" href="./Contact us.html" target="_blank"> 
+                    <i class="fa-solid fa-phone"></i>
+                    Contact Us </a>
+               </li>
+  
+              <li class="nav-item">
+                  <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop11" target="_blank"> 
+                    <i class="fa-solid fa-user"></i>
+                    Login</a>
+              </li>
+            </ul>
+  
+        </div>
+      </div>
+    </nav>
+
+  <!-- upperimage -->
+  <div class="">
+  <div class="card mt-2 text-white">
+    <img class="card-img " src="./covers/hs11.jpg" alt="Card image" style="border-style: none; margin-top: -110px;">
+    
+    <div class="card-img-overlay">
+      <div class="box">
+      <h1 class="card-title ">Mountain Tour-2023</h1>
+      <p class="card-text container-fluid">A chain of 1,200 islands in the Indian Ocean, the Maldives is one of the most serene,and wildly scenic destinations in the world. The islands are clustered into atolls, based on their proximity to various coral reefs, and are surrounded by calm, azure-colored lagoons. These still waters lend themselves to those dreamy overwater bungalows that have become synonymous with the archipelago, while the coral reefs make it a sought-after snorkeling destination. The final piece of this idyllic vacation spot is, of course, the Maldives beaches, many of which are pristine, white-sand stretches that travelers spend long days luxuriating on.</p>
+      <!-- <p class="card-text container-fluid">Last updated 3 mins ago</p> -->
+    </div>
+  </div>
+  </div>
+</div>
+
+<!-- maincradshtml -->
+
+<div class="container-fluid mt-5">
+<h1 style="margin-top: 10px;">Top Best Hills Station To Visit </h1>
+<hr style="background-color: orange; width:50% ;margin-left: 325px; ">
+    <div class="row">
+
+        <div class="col-md-4">
+            <!-- <h1>News Card</h1> -->
+            <div class="cardcontainer mt-5">
+                <div class="photo">
+                    <img src="./image/1200px-Hunza_Valley_HDR.jpg">
+                    <div class="photos">Photos</div>
+                </div>
+                <div class="content">
+                    <p class="txt4">Hunza Hill Station</p>
+                    <p class="txt2 text-danger">Eagles nest in the Hunza</p>
+                    <!-- <p class="txt2">New York, the largest city in the U.S., is an architectural marvel with plenty of historic monuments, magnificent buildings and countless dazzling skyscrapers.</p> -->
+                </div>
+                <div class="footer1">
+                    <p><a class="btn" href="./hunzahill.html" target="_blank">Book Now</a><a id="heart"><span class="like"><i class="fab fa-gratipay"></i>Like</span></a></p>
+                    <p class="txt3"><i class="far fa-clock"></i>10 Minutes Ago <span class="comments"><i class="fas fa-comments"></i>45 Comments</span></p>
+                </div>
+            </div>
+               </div>
+
+        
+       <div class="col-md-4">
+        <!-- <h1>News Card</h1> -->
+        <div class="cardcontainer mt-5 ">
+            <div class="photo">
+                <img src="./image/375px-Malam_Jaba,_Swat,_Pakistan.jpeg">
+                <div class="photos">Photos</div>
+            </div>
+            <div class="content">
+                <p class="txt4">Malam Jabba</p>
+                <p class="txt2 text-danger">Malam desired tourism hub</p>
+                <!-- <p class="txt2">New York, the largest city in the U.S., is an architectural marvel with plenty of historic monuments, magnificent buildings and countless dazzling skyscrapers.</p> -->
+            </div>
+            <div class="footer1">
+                <p><a class="btn " href="./malamjabba.html" target="_blank">Book Now</a><a id="heart"><span class="like"><i class="fab fa-gratipay"></i>Like</span></a></p>
+                <p class="txt3"><i class="far fa-clock"></i>10 Minutes Ago <span class="comments"><i class="fas fa-comments"></i>45 Comments</span></p>
+            </div>
+        </div>
+           </div>
+       
+           <div class="col-md-4 mt-5" >
+            <div class="header text-end" style="background-color: white; width: 90%;"><a href="#" class="">ads#</div>
+                <img src="./images/ezgif.com-gif-maker (1).gif" style="width: 90%; height: 100%;" alt=""></a>
+          </div>
+        </div>
+
+</div>
+</div>
+
+
+<div class="container-fluid">
+    <!-- <h3 style="margin-top: 10px;">Top Hill Station In United Arab Emirates</h3> -->
+        <div class="row">
+    
+            <div class="col-md-4">
+                <!-- <h1>News Card</h1> -->
+                <div class="cardcontainer  mb-3" style="margin-top: -140px;">
+                    <div class="photo">
+                        <img src="./images/jabal-jais-image.jpg">
+                        <div class="photos">Photos</div>
+                    </div>
+                    <div class="content">
+                        <p class="txt4">Jabal-Jais</p>
+                        <p class="txt2 text-danger">A long trip</p>
+                        <!-- <p class="txt2">New York, the largest city in the U.S., is an architectural marvel with plenty of historic monuments, magnificent buildings and countless dazzling skyscrapers.</p> -->
+                    </div>
+                    <div class="footer1">
+                        <p><a class="btn" href="./jebal-jais.html" target="_blank">Book Now</a><a id="heart"><span class="like"><i class="fab fa-gratipay"></i>Like</span></a></p>
+                        <p class="txt3"><i class="far fa-clock"></i>10 Minutes Ago <span class="comments"><i class="fas fa-comments"></i>45 Comments</span></p>
+                    </div>
+                </div>
+                   </div>
+            
+             <div class="col-md-4">
+            <!-- <h1>News Card</h1> -->
+            <div class="cardcontainer mb-3" style="margin-top: -140px;">
+                <div class="photo">
+                    <img src="./images/jebel-hafeet.jpg">
+                    <div class="photos">Photos</div>
+                </div>
+                <div class="content">
+                    <p class="txt4">Jebel-Hafeet</p>
+                    <p class="txt2 text-danger">Trip to nature beauty</p>
+                    <!-- <p class="txt2">New York, the largest city in the U.S., is an architectural marvel with plenty of historic monuments, magnificent buildings and countless dazzling skyscrapers.</p> -->
+                </div>
+                <div class="footer1">
+                    <p><a class="btn" href="./jebel-hafeet.html" target="_blank">Book Now</a><a id="heart"><span class="like"><i class="fab fa-gratipay"></i>Like</span></a></p>
+                    <p class="txt3"><i class="far fa-clock"></i>10 Minutes Ago <span class="comments"><i class="fas fa-comments"></i>45 Comments</span></p>
+                </div>
+            </div>
+               </div>
+           
+
+            <div class="col-md-4"></div>
+    
+    </div>
+    </div>
+
+    <div class="container-fluid">
+        <!-- <h3 style="margin-top: 10px;">Top Hill Station In United Arab Emirates</h3> -->
+            <div class="row">
+        
+                <div class="col-md-4">
+                    <!-- <h1>News Card</h1> -->
+                    <div class="cardcontainer " style="margin-top: 50px; margin-bottom: 50px;">
+                        <div class="photo">
+                            <img src="./image/sigapore 05.jpeg">
+                            <div class="photos">Photos</div>
+                        </div>
+                        <div class="content">
+                            <p class="txt4">Bukit Batok Hill </p>
+                            <p class="txt2 text-danger">Eagles nest in the hill</p>
+                            <!-- <p class="txt2">New York, the largest city in the U.S., is an architectural marvel with plenty of historic monuments, magnificent buildings and countless dazzling skyscrapers.</p> -->
+                        </div>
+                        <div class="footer1">
+                            <p><a class="btn" href="./butikbatokhillpark.html" target="_blank">Book Now</a><a id="heart"><span class="like"><i class="fab fa-gratipay"></i>Like</span></a></p>
+                            <p class="txt3"><i class="far fa-clock"></i>10 Minutes Ago <span class="comments"><i class="fas fa-comments"></i>45 Comments</span></p>
+                        </div>
+                    </div>
+                       </div>
+                
+                 <div class="col-md-4">
+                <!-- <h1>News Card</h1> -->
+                <div class="cardcontainer" style="margin-top: 50px;  margin-bottom: 50px;">
+                    <div class="photo">
+                        <img src="./image/download (5).jpeg">
+                        <div class="photos">Photos</div>
+                    </div>
+                    <div class="content">
+                        <p class="txt4">Bukit Kalang Hill</p>
+                        <p class="txt2 text-danger">Bukit desired tourism hill</p>
+                        <!-- <p class="txt2">New York, the largest city in the U.S., is an architectural marvel with plenty of historic monuments, magnificent buildings and countless dazzling skyscrapers.</p> -->
+                    </div>
+                    <div class="footer1">
+                        <p><a class="btn" href="./bukitkalang.html" target="_blank">Book Now</a><a id="heart"><span class="like"><i class="fab fa-gratipay"></i>Like</span></a></p>
+                        <p class="txt3"><i class="far fa-clock"></i>10 Minutes Ago <span class="comments"><i class="fas fa-comments"></i>45 Comments</span></p>
+                    </div>
+                </div>
+                   </div>
+               
+    
+                <div class="col-md-4"></div>
+        
+        </div>
+        </div>
+    
+<!-- Footer -->
+<footer class="text-center text-lg-start  " >
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4  border-bottom " style="background-color: maroon; color: white;">
+    <!-- Left -->
+    <div class=" me-5 d-lg-block" >
+      <span ><h5 style="margin-left: -10px;"> Get connected with us on social networks: </h5></span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="https://www.facebook.com/login.php" class="me-4 link-secondary" >
+        <!-- <i class="fab fa-facebook-f"></i> -->
+        <i class="fa-brands fa-facebook-f" style="color: white;"></i>
+      </a>
+      <a href="https://twitter.com/login" class="me-4 link-secondary">
+        <i class="fab fa-twitter" style="color: white;"></i>
+      </a>
+      <a href="https://mail.google.com/" class="me-4 link-secondary">
+        <i class="fab fa-google" style="color: white;"></i>
+      </a>
+      <a href="https://www.instagram.com/accounts/login/" class="me-4 link-secondary">
+        <i class="fab fa-instagram" style="color: white;"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- nextline -->
+  <div class="container-fluid section1">
+    <div class="row">
+      
+      <div class=" col-md-3 mt-2">
+        <h3>Company</h3>
+        <ul class="list-unstyled" >
+          <li>About us</li>
+          <li>Career</li>
+        </ul>
+
+        <hr>
+        
+          <h3>Support</h3>
+          <ul class="list-unstyled">
+            <li>Contact us</li>
+            <li>Help Center</li>           
+          </ul> 
+          </div>
+
+        <div class="col-md-3 mt-2">
+          <h3>Traveler</h3>
+        <ul style="list-style: none; margin-left: -25px;">
+          <li>Days to come Magzine</li>
+          <li>Win an Adventure</li>
+          
+          </ul>
+          <hr>
+          <h3>Travel Advisors</h3>
+          <ul style="list-style: none; margin-left: -25px;">
+            <li>Travel Advisors / Agents</li>
+            <li>Advisor Lodin</li>
+            <li>After your booking</li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 mt-2">
+          <h3>Product</h3>
+          <ul style="list-style: none; margin-left: -25px;">
+            <li>Beach Tour</li>
+            <li>Hill Station</li>
+            <li>Fort & Places</li>
+          </ul>
+          <h3>Rate Our Website</h3>
+          <li class="fa fa-star" style="color:orange;"></li>
+          <li class="fa fa-star" style="color:orange;"></li>
+          <li class="fa fa-star" style="color:orange;"></li>
+          <li class="fa fa-star" style="color:orange;"></li>
+          <li class="fa fa-star-half-alt" style="color:orange;"></li>
+        </div>
+      
+      <div class="col-md-3 mt-2">
+        <h3>Our Work</h3>
+        <img class="" src="./images/hikingg.jpg" style="width: 100px;height: 70px;" alt="" />
+        <img class="" src="./images/4.jpg" style="width: 100px;height: 70px;" alt="" /><br>
+        <img class="mt-1 mb-1" src="./images/HD-wallpaper-happy-sailing-visitors-group-a-of.jpg" style="width: 100px;height: 70px;" alt="" />
+        <img class="mt-1 mb-1" src="./images/1.jpg " style="width: 100px;height: 70px;" alt="" />
+      </div>
+      
+    </div>
+  </div>
+  
+  <div class="copyright text-center" style="background-color:maroon; color: white;">
+    Created By :  Ariba & Areesha &copy; 2023 <span>Pleasant Tour</span>
+  </div>
+</footer>
+<!-- Footerclose -->
+
+      
+        
+        
+
+     <!-- Button trigger modal feedback-->
+     <!-- <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Sign Up!</button> -->
+     <!-- Modal -->
+     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+       <div class="modal-dialog">
+         <div class="modal-content">
+           <div class="modal-header">
+             <h5 class="modal-title" id="staticBackdropLabel">For More Information!</h5>
+             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+           </div>
+           <div class="modal-body">
+               <div class="container-fluid">
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Type Your Feedback Here"></textarea>
+                </div>
+  
+               </div>
+                <!-- </div> -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Submit</button>
+              </div>
+            <!-- </div> -->
+          </div>
+        </div>
+                          </div>
+                           
+                        </div>
+  
+      <!-- Button trigger modal login -->
+      <!-- <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop11">Login</button> -->
+      <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop11" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel11" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel11">Login! Here</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                  <form>
+                    <div class="form-group m-3">
+                      <label for="exampleInputEmail1">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                      <small id="emailHelp" class="form-text text-muted" >We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group m-3">
+                      <label for="exampleInputPassword1">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <div class="form-check m-3">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Save information</label>
+                    </div>
+                    
+                  </form>
+                </div>
+                <!-- </div> -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">LOGIN</button>
+              </div>
+            <!-- </div> -->
+          </div>
+          </div>
+          </div>
+        </div>
+    
+
+    
+    <script src="./js/jquery-3.6.3.min.js"></script>  
+    <script src="./js/bootstrap.min.js"></script>
+   
+    
+
+</body>
+</html>

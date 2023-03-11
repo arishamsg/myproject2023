@@ -1,0 +1,1810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PleasantTours - Book tour & travel packages PleasantTour.com  </title>
+    <link  rel="shortcut icon"  type="image/x-icon" href="./images/logo/My_project-1__2_-removebg-preview.png" style="width: 40px; height: 40px;" alt="Pleasant tour-Book tour & travel packages  PleasantTour.com ">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+      <!-- iconlink -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+      <!-- externalcssfilelink -->
+     <link rel="stylesheet" href="externalfile1.css">
+     <!-- fontlinkh1 -->
+     <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Kaushan+Script&family=Righteous&family=Sassy+Frass&family=Solitreo&display=swap" rel="stylesheet">
+    <!-- fontlinkh2 -->
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Kaushan+Script&family=Oswald&family=Righteous&family=Rock+Salt&family=Sassy+Frass&family=Solitreo&display=swap" rel="stylesheet">
+    <!-- animationlink -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+      body 
+      {
+        background-color:whitesmoke;
+      }
+    
+      /* slider2 */
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      
+/* covercardcss */
+.dealbox {
+  width: 100%;
+  height: 61%;
+  background-image: url(./images/mc10.webp);
+background-repeat: no-repeat;
+background-attachment: scroll;
+background-size:cover;
+margin-top: -100px ;
+margin-bottom: 50px;
+}
+/* sideablemenucss */
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+    .menu {
+      min-width: 100px;
+      width: 70%;
+      max-width: 320px;
+
+      background-color:skyblue;
+      /* background-image: url(images/index); */
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      color: rgb(252, 250, 250);
+      /* opacity: 0.8; */
+    }
+
+    .content {
+      width: 100%;
+    }
+
+    .menu-button {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+
+      padding: 15px;
+
+      cursor: pointer;
+
+      -webkit-transition: 0.3s;
+      transition: 0.3s;
+
+      background-color:#3b8d99; 
+
+      /* margin: 14px;
+			border-radius: 5px; */
+    }
+
+    .menu-button .bar:nth-of-type(1) {
+      margin-top: 0px;
+    }
+
+    .menu-button .bar:nth-of-type(3) {
+      margin-bottom: 0px;
+    }
+
+    .bar {
+      position: relative;
+      display: block;
+
+      width: 35px;
+      height: 5px;
+
+      margin: 10px auto;
+      background-color: #fff;
+
+      border-radius: 10px;
+
+      -webkit-transition: 0.3s;
+      transition: 0.3s;
+    }
+
+    .menu-button:hover .bar:nth-of-type(1) {
+      -webkit-transform: translateY(1.5px) rotate(-4.5deg);
+      -ms-transform: translateY(1.5px) rotate(-4.5deg);
+      transform: translateY(1.5px) rotate(-4.5deg);
+    }
+
+    .menu-button:hover .bar:nth-of-type(2) {
+      opacity: 0.9;
+    }
+
+    .menu-button:hover .bar:nth-of-type(3) {
+      -webkit-transform: translateY(-1.5px) rotate(4.5deg);
+      -ms-transform: translateY(-1.5px) rotate(4.5deg);
+      transform: translateY(-1.5px) rotate(4.5deg);
+    }
+
+    .cross .bar:nth-of-type(1) {
+      -webkit-transform: translateY(15px) rotate(-45deg);
+      -ms-transform: translateY(15px) rotate(-45deg);
+      transform: translateY(15px) rotate(-45deg);
+    }
+
+    .cross .bar:nth-of-type(2) {
+      opacity: 0;
+    }
+
+    .cross .bar:nth-of-type(3) {
+      -webkit-transform: translateY(-15px) rotate(45deg);
+      -ms-transform: translateY(-15px) rotate(45deg);
+      transform: translateY(-15px) rotate(45deg);
+    }
+
+    .cross:hover .bar:nth-of-type(1) {
+      -webkit-transform: translateY(13.5px) rotate(-40.5deg);
+      -ms-transform: translateY(13.5px) rotate(-40.5deg);
+      transform: translateY(13.5px) rotate(-40.5deg);
+    }
+
+    .cross:hover .bar:nth-of-type(2) {
+      opacity: 0.1;
+    }
+
+    .cross:hover .bar:nth-of-type(3) {
+      -webkit-transform: translateY(-13.5px) rotate(40.5deg);
+      -ms-transform: translateY(-13.5px) rotate(40.5deg);
+      transform: translateY(-13.5px) rotate(40.5deg);
+    }
+  
+
+
+ /* dealscardsandbelowcards */
+.card-container {
+    padding: 100px 0px;
+    -webkit-perspective: 1000;
+    perspective: 1000;
+}
+
+.profile-card-1 {
+    background-color: #FFF;
+    border-radius: 10px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    background-image: url(../img/profie-bg-1.jpg);
+    background-position: center;
+    padding-top: 100px;
+    overflow: hidden;
+    position: relative;
+    margin: 10px auto;
+    cursor: pointer;
+    max-width: 300px;
+}
+
+.profile-card-1 .profile-content {
+    position: relative;
+    background-color: #FFF;
+    padding: 70px 20px 20px 20px;
+    text-align: center;
+}
+
+.profile-card-1 .profile-img {
+    position: absolute;
+    height: 100px;
+    left: 0px;
+    right: 0px;
+    z-index: 10;
+    top: -50px;
+    transition: all 0.25s linear;
+    transform-style: preserve-3d;
+}
+
+.profile-card-1 .profile-img img {
+    height: 100px;
+    margin: auto;
+    border-radius: 50%;
+    border: 5px solid #FFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.profile-card-1 .profile-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #021830;
+}
+
+.profile-card-1 .profile-address {
+    color: #777;
+    font-size: 12px;
+    margin: 0px 0px 15px 0px;
+}
+
+.profile-card-1 .profile-description {
+    font-size: 13px;
+    padding: 5px 10px;
+    color: #777;
+}
+
+.profile-card-1 .profile-icons .fa {
+    margin: 5px;
+    color: #777;
+}
+
+.profile-card-1:hover {
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card-1:hover .profile-img {
+    transform: rotateY(180deg);
+}
+ 
+.profile-card-2 {
+    max-width: 300px;
+    background-color: #FFF;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+    margin: 10px auto;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.profile-card-2 img {
+    transition: all linear 0.25s;
+}
+
+.profile-card-2 .profile-name {
+    position: absolute;
+    left: 30px;
+    bottom: 70px;
+    font-size: 30px;
+    color: #FFF;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    transition: all linear 0.25s;
+}
+
+.profile-card-2 .profile-icons {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    color: #FFF;
+    transition: all linear 0.25s;
+}
+
+.profile-card-2 .profile-username {
+    position: absolute;
+    bottom: 50px;
+    left: 30px;
+    color: #FFF;
+    font-size: 13px;
+    transition: all linear 0.25s;
+}
+
+.profile-card-2 .profile-icons .fa {
+    margin: 5px;
+}
+
+.profile-card-2:hover img {
+    filter: grayscale(100%);
+}
+
+.profile-card-2:hover .profile-name {
+    bottom: 80px;
+}
+
+.profile-card-2:hover .profile-username {
+    bottom: 60px;
+}
+
+.profile-card-2:hover .profile-icons {
+    right: 40px;
+}
+
+.profile-card-3 {
+    background-color: #FFF;
+    border-radius: 5px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    margin: 10px auto;
+    cursor: pointer;
+    padding: 25px 15px;
+}
+
+.profile-card-3 .profile-name {
+    font-weight: bold;
+    color: #21304e;
+}
+
+.profile-card-3 .profile-location {
+    color: #999;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.profile-card-3 img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    margin: 10px auto;
+    border-radius: 50%;
+    transition: all linear 0.25s;
+}
+
+.profile-card-3 .profile-description {
+    font-size: 13px;
+    color: #777;
+    padding: 10px;
+}
+
+.profile-card-3 .profile-icons {
+    margin: 15px 0px;
+}
+
+.profile-card-3 .profile-icons .fa {
+    color: #fe455a;
+    margin: 0px 5px;
+}
+
+.profile-card-3:hover img {
+    height: 110px;
+    width: 110px;
+    margin: 5px auto;
+}
+
+.profile-card-4 {
+    max-width: 300px;
+    background-color: #FFF;
+    border-radius: 5px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+.profile-card-4 img {
+    transition: all 0.25s linear;
+}
+
+.profile-card-4 .profile-content {
+    position: relative;
+    padding: 15px;
+    background-color: #FFF;
+}
+
+.profile-card-4 .profile-name {
+    font-weight: bold;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: -70px;
+    color: #FFF;
+    font-size: 17px;
+}
+
+.profile-card-4 .profile-name p {
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+}
+
+.profile-card-4 .profile-description {
+    color: #777;
+    font-size: 12px;
+    padding: 10px;
+}
+
+.profile-card-4 .profile-overview {
+    padding: 15px 0px;
+}
+
+.profile-card-4 .profile-overview p {
+    font-size: 10px;
+    font-weight: 600;
+    color: #777;
+}
+
+.profile-card-4 .profile-overview h4 {
+    color: #273751;
+    font-weight: bold;
+}
+
+.profile-card-4 .profile-content::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    top: -10px;
+    left: 0px;
+    right: 0px;
+    background-color: #FFF;
+    z-index: 0;
+    transform: skewY(3deg);
+}
+
+.profile-card-4:hover img {
+    transform: rotate(5deg) scale(1.1, 1.1);
+    filter: brightness(110%);
+}
+
+.profile-card-5 {
+    max-width: 300px;
+    background-color: #FFF;
+    border-radius: 5px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    margin: 10px auto;
+    cursor: pointer;
+    padding: 50px 15px 25px 15px;
+}
+
+.profile-card-5 img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    margin: 10px auto;
+    border-radius: 50%;
+    transition: all linear 0.25s;
+    position: relative;
+}
+
+.profile-card-5::before {
+    content: "";
+    position: absolute;
+    top: -60px;
+    right: 0px;
+    left: 0px;
+    height: 170px;
+    background-color: #4fb96e;
+    transform: skewY(-20deg);
+}
+
+.profile-card-5 .profile-name {
+    padding-top: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+.profile-card-5 .profile-designation {
+    font-size: 13px;
+    color: #777;
+}
+
+.profile-card-3 .profile-location {
+    color: #999;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.profile-card-5 .profile-description {
+    font-size: 13px;
+    color: #777;
+    padding: 10px;
+}
+
+.profile-card-5 .profile-overview {
+    padding: 15px 0px;
+}
+
+.profile-card-5 .profile-overview p {
+    color: #777;
+    font-size: 13px;
+}
+
+.profile-card-5 .profile-overview h2 {
+    font-weight: bold;
+    color: #1e2832;
+}
+
+.profile-card-5 .profile-icons .fa {
+    margin: 7px;
+    color: #4fb96e;
+}
+
+.profile-card-5:hover img {
+    transform: rotate(-5deg);
+}
+
+.profile-card-6 {
+    max-width: 300px;
+    background-color: #FFF;
+    border-radius: 5px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+.profile-card-6 img {
+    transition: all 0.15s linear;
+}
+
+.profile-card-6 .profile-name {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #FFF;
+    padding: 15px 20px;
+    background: linear-gradient(140deg, rgba(0, 0, 0, 0.4) 50%, rgba(255, 255, 0, 0) 50%);
+    transition: all 0.15s linear;
+}
+
+.profile-card-6 .profile-position {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.4);
+    left: 30px;
+    top: 100px;
+    transition: all 0.15s linear;
+}
+
+.profile-card-6 .profile-overview {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 50%, rgba(255, 255, 0, 0));
+    color: #FFF;
+    padding: 50px 0px 20px 0px;
+    transition: all 0.15s linear;
+}
+
+.profile-card-6 .profile-overview h3 {
+    font-weight: bold;
+}
+
+.profile-card-6 .profile-overview p {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.profile-card-6:hover img {
+    filter: brightness(80%);
+}
+
+.profile-card-6:hover .profile-name {
+    padding-left: 25px;
+    padding-top: 20px;
+}
+
+.profile-card-6:hover .profile-position {
+    left: 40px;
+}
+
+.profile-card-6:hover .profile-overview {
+    padding-bottom: 25px;
+}
+
+.profile-card-7 {
+    background-color: #FFF;
+    border-radius: 5px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+.profile-card-7 .profile-content {
+    padding: 60px 30px 30px 30px;
+    background-color: #FFF;
+    position: relative;
+}
+
+.profile-card-7 .profile-content img {
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    top: -40px;
+    border: 5px solid #FFF;
+}
+
+.profile-card-7 .profile-content .profile-name {
+    position: absolute;
+    font-size: 17px;
+    font-weight: bold;
+    top: -35px;
+    left: 125px;
+    color: #FFF;
+}
+
+.profile-card-7 .profile-overview {
+    padding: 5px 0px;
+}
+
+.profile-card-7 .profile-overview p {
+    color: #777;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.profile-card-7 .profile-overview h5 {
+    color: #142437;
+    font-weight: bold;
+}
+
+.profile-card-8 {
+    background: linear-gradient(#09121c, #36445a);
+    border-radius: 5px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    margin: 10px auto;
+    cursor: pointer;
+    transition: all 0.25s linear;
+}
+
+.profile-card-8 .profile-name {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 25px;
+    color: #58d683;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.profile-card-8 .profile-designation {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 50px;
+    color: #FFF;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.profile-card-8 .profile-icons {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 80px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.profile-card-8 .profile-icons .fa {
+    margin: 5px;
+}
+
+.profile-card-8:hover {
+    transform: scale(1.05, 1.05);
+}
+
+.profile-card-9 {
+    border-radius: 10px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    margin: 10px auto;
+    cursor: pointer;
+    padding: 30px 15px;
+    background-color: #FFF;
+    transition: all 0.25s linear;
+}
+
+.profile-card-9 img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    margin: 10px auto;
+}
+
+.profile-card-9 .profile-name {
+    font-size: 15px;
+    color: #3249b9;
+    font-weight: 600;
+}
+
+.profile-card-9 .profile-designation {
+    font-size: 13px;
+    color: #777;
+}
+
+.profile-card-9 .profile-description {
+    padding: 10px;
+    font-size: 13px;
+    color: #777;
+    margin: 15px 0px;
+    background-color: #F1F2F3;
+    border-radius: 5px;
+}
+
+.profile-card-9 a {
+    padding: 10px 15px;
+    background-color: #3249b9;
+    color: #FFF;
+    font-size: 11px;
+    border-radius: 25px;
+}
+
+.profile-card-9:hover {
+    transform: scale(1.05, 1.05);
+}
+
+.profile-card-10 {
+    border-radius: 5px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    margin: 10px auto;
+    cursor: pointer;
+    padding: 30px 15px;
+    background-color: #1f2124;
+    color: #EEE;
+}
+
+.profile-card-10 img {
+    margin: 10px auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 10px solid transparent;
+    box-shadow: 0px 0px 0px 2px #64c17b;
+    transition: all 0.25s linear;
+}
+
+.profile-card-10 .profile-name {
+    color: #FFF;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.profile-card-10 .profile-location {
+    font-size: 13px;
+    opacity: 0.7;
+}
+
+.profile-card-10 .profile-description {
+    padding: 10px;
+    font-size: 13px;
+}
+
+.profile-card-10 .profile-icons .fa {
+    color: #ffc75e;
+    margin: 10px;
+}
+
+.profile-card-10:hover img {
+    transform: scale(1.1);
+} 
+
+.overbody
+{
+  background-color:white;
+  /* fill-opacity: calc(0.6); */
+}
+
+.slider1
+{
+  transition:3s;
+}
+
+/* review cards */
+.card {
+  border-radius: .7rem;
+}
+    </style>
+</head>
+
+<body>
+ 
+<div class="container-fluid">
+  <div class="row" style="background-color:darkred; color: white; height: 40px;">
+    <div class="col-md-10">
+      <h5 class="mt-1">New Year's Travel Deals: 2023 Adventure Begins! Up to 25% OFF </h5>
+    </div>
+
+    <div class="col-md-2">
+
+
+      <a href="https://www.facebook.com/login/" target="_blank"><i class="fa-brands fa-facebook-f me-3 mt-2" style="color: white;"></i></a>
+      <a href="https://www.instagram.com/accounts/login/" target="_blank"><i class="fa-brands fa-instagram me-3 mt-1" style="color: white;"></i></a>
+      <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D" target="_blank"><i class="fa-brands fa-twitter me-3 mt-1" style=" color:white;"></i></a>
+      <a href="https://www.youtube.com/account" target="_blank"><i class="fa-brands fa-youtube me-3 mt-1" style=" color: white;"></i></a>
+
+    </div>
+  </div>
+</div>    
+
+<!-- navbar start -->
+<nav class="navbar  nav navbar-expand-lg sticky-top">
+  <!-- logo&name start-->
+    <div class="container-fluid">
+        <nav class="navbar sticky-top" >
+            <div class="container-fluid ">
+              <img src="./images/logo/My_project-1__2_-removebg-preview.png" alt="" width="60" height="60" class="d-inline-block align-text-top">
+              <a class="navbar-brand m-2" href="./index.html" style="font-family: 'Kaushan Script', cursive; font-size: xx-large;"> PleasantTour<small style="font-size:x-small;">.com</small> <br>
+              </a>              
+            </div>
+        </nav>
+        <!-- navbuttons -->
+       <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" style="padding-right: 10px;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Destination</a> 
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="./pakistan.html" target="_blank">Pakistan</a></li>
+                    <li><a class="dropdown-item" href="./uae.html" target="_blank">United Arab Emirates</a></li>
+                    <li><a class="dropdown-item" href="./maldives.html" target="_blank">Maldives</a></li>
+                    <li><a class="dropdown-item" href="./Sigapore.html" target="_blank">Singapore</a></li>                   
+                  </ul></li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" style="padding-right: 10px;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Adventure Style</a> 
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">   
+                        <li><a class="dropdown-item" href="./beaches.html" target="_blank">Beach Tours</a></li>
+                        <li><a class="dropdown-item" href="./hills.html" target="_blank">Hill Station</a></li>
+                        <li><a class="dropdown-item" href="./forts.html" target="_blank">Forts & Places </a></li>                      
+                     </ul>
+                    </li>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" style="padding-right: 10px;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                          Currencies</a> 
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+        
+                            <li><a class="dropdown-item" href="./dollarpage.html" target="_blank">USD-$</a></li>                
+                          </ul>
+                          </li>
+                          <li class="nav-item ">
+                            <a class="nav-link" style="padding-right: 10px;" href="./msword/pricelist.docx" id="" role="button" target="_blank">
+                              Price List</a></li>
+                 </ul>
+        <!-- contactus&login -->
+
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+             <a class="nav-link" href="./aboutus.html" target="_blank"> 
+               <i class="fa-solid fa-pen"></i>
+               About Us </a>
+          </li>
+
+        
+             <li class="nav-item">
+                <a class="nav-link" href="./Contact us.html" target="_blank"> 
+                  <i class="fa-solid fa-phone"></i>
+                  Contact Us </a>
+             </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop11" target="_blank"> 
+                  <i class="fa-solid fa-user"></i>
+                  Login</a>
+            </li>
+          </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- dealscards -->
+<div class="dealbox">
+  <div class="container">
+  <div class="row">
+
+    <div class="col-md-3" style="margin-top: 25%; width: 20%; ">
+    <!-- <h4 class="text-center"><strong>STYLE 1</strong></h4> -->
+
+    <div class="profile-card-2"> <a href="./uae.html" target="_blank"><img src="./images/indeximg/new year deal.jpg" class="img" style="width: 210px; height: 200px;"></a>
+    <div class="profile-name" style="font-family: 'Oswald', sans-serif;"><a href="./uae.html" target="_blank"> View Detail </a></div>
+    <div class="profile-username">@pleasanttravel</div>
+    <!-- <div class="profile-icons"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a></div> -->
+    </div>
+        </div>
+
+        <div class="col-md-2"  style="margin-top: 25%; width: 20%;">
+          <!-- <h4 class="text-center"><strong>STYLE 1</strong></h4> -->
+          
+          <div class="profile-card-2"> <a href="./hills.html" target="_blank"><img src="./images/indeximg/hill1.jpg" class="img" style="width: 300px; height: 200px;"></a>
+          <div class="profile-name" style="font-family: 'Oswald', sans-serif;"><a href="./hills.html" target="_blank"> Hills Station </a></div>
+          <div class="profile-username text-center">191+ tours</div>
+          <!-- <div class="profile-icons"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a></div> -->
+          </div>
+              </div>
+
+        <div class="col-md-2"  style="margin-top: 25%; width: 20%;">
+    <!-- <h4 class="text-center"><strong>STYLE 1</strong></h4> -->
+    
+    <div class="profile-card-2"> <a href="./beaches.html" target="_blank"><img src="./images/indeximg/beach3.jpg" class="img" style="width: 300px; height: 200px;"></a>
+    <div class="profile-name" style="font-family: 'Oswald', sans-serif;"><a href="./beaches.html" target="_blank"> Beaches </a></div>
+    <div class="profile-username text-center">298+ tours</div>
+    <!-- <div class="profile-icons"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a></div> -->
+    </div>
+        </div>
+
+        <div class="col-md-2"  style="margin-top: 25%; width: 20%; ">
+    <!-- <h4 class="text-center"><strong>STYLE 1</strong></h4> -->
+    
+    <div class="profile-card-2"> <a href="./forts.html" target="_blank"><img src="./images/indeximg/forts2.jpg" class="img" style="width: 300px; height: 200px;"></a>
+    <div class="profile-name" style="font-family: 'Oswald', sans-serif;"><a href="./forts.html" target="_blank"> Forts </a></div>
+    <div class="profile-username text-center">105+ tours</div>
+    <!-- <div class="profile-icons"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a></div> -->
+    </div>
+        </div>
+
+         <div class="col-md-3"  style="margin-top: 25%; width: 20%;">
+    <!-- <h4 class="text-center"><strong>STYLE 1</strong></h4> -->
+    
+    <div class="profile-card-2"> <a href="./skydubai.html" target="_blank"><img src="./images/indeximg/climb-the-fort-hill-stairs.jpg" class="img" style="width: 300px; height: 200px;"></a>
+    <div class="profile-name" style="font-family: 'Oswald', sans-serif;"><a href="./skydubai.html" target="_blank"> Costumize </a></div>
+    <div class="profile-username">Your own package</div>
+    <!-- <div class="profile-icons"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a></div> -->
+    </div>
+        </div>
+
+</div>
+</div> 
+</div> 
+
+<!-- slider1 -->
+    <div id="carouselExampleFade" class="carousel slide carousel-fade w-100" style=" margin-top: 13%; margin-bottom: 10%; height: 200px;" data-bs-ride="carousel">
+      <div class="carousel-inner" id="slider1">
+        <div class="carousel-item active">
+          <img src="./images/indeximg/FotoJet11.jpg" class="d-block w-100" style=" height: 300px;" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/indeximg/FotoJet33.jpg" class="d-block w-100" style="height: 300px;" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/indeximg/FotoJet44.jpg" class="d-block w-100"  style="height: 300px;" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/indeximg/FotoJet55.jpg" class="d-block w-100" style="height: 300px;" alt="...">
+        </div>
+      </div>  
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true" style="margin-top: 120px; margin-left: -150px;"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true" style="margin-top: 120px; margin-right: -140px;"></span>
+        <span class="visually-hidden ">Next</span>
+      </button>
+    </div>
+    <div class="overbody m-3">
+<!-- covercardstaring -->
+<div class="container-fluid">
+<div class="row"> 
+<div class="col-md-7"  style="margin-top: 2%;">
+<!-- Swiper -->
+<div class="swiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide menu"><img src="./images/indeximg/md3.jpg" style="opacity: 0.4" alt="">
+      <ul class="card-img-overlay text-start ms-3 mt-5">
+        <h3 style="margin-left: -20px;">Group Adventure</h3>
+        <li>Skydiving</li>
+        <li>Ziplining</li>
+        <li>Bridge climbing</li>
+        <li>Caving</li>
+        <li>Bungy Jumping</li>
+        <li>Rafting</li>
+        <li>Swiming with Sharks</li>
+        <li>Paragliding</li>
+      </ul></div>
+    
+    <div class="swiper-slide content">
+      
+      <div class="menu-button">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    <img src="./images/indeximg/Blank 4 Grids Collage (1).png " style="width: 800px; height:700px;" alt="">
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="col-md-5 mt-4">
+  <div data-aos="fade-up">
+
+  <div class="row g-0 bg-light position-relative mt-3">
+  <div class="col-md-6 mb-md-0 p-md-4">
+    <img src="./images/indeximg/car.jpg" class="w-100" style="height: 170px;" alt="...">
+  </div>
+  <div class="col-md-6 p-4 ps-md-0">
+    <h5 class="mt-0">Evening Desert Safari in Dubai with BBQ Dinner</h5>
+    <!-- <p>One of the most sought-after tours in the UAE is the Dubai Desert Safari with BBQ Dinner. Whether you are travelling with family or with friends, it is highly recommended to go for a Desert Safari in Dubai. </p> -->
+    <h6> <small> <del class="text-muted"> Rs. 37,000 </del></small> <br> Rs. 17,000</h6>
+    <a href="./dubaisafari.html" class="stretched-link btn" style="background-color: #3b8d99; color: white;">Book Now</a>
+  </div>
+</div> <br>
+<div class="row g-0 bg-light position-relative">
+  <div class="col-md-6 mb-md-0 p-md-4">
+    <img src="./images/indeximg/skydubai.jpg" class="w-100" alt="...">
+  </div>
+  <div class="col-md-6 p-4 ps-md-0">
+    <h5 class="mt-0">Dinner in the Sky Dubai</h5>
+    <!-- <p>Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p> -->
+    <h6> <small> <del class="text-muted"> Rs. 50,000 </del></small> <br> Rs. 44,999</h6>
+    <a href="./skydubai.html" class="stretched-link btn "  style="background-color:#3b8d99; color: white;">Book Now</a>
+  </div>
+</div> <br>
+<div class="row g-0 bg-light position-relative">
+  <div class="col-md-6 mb-md-0 p-md-4">
+    <img src="./images/indeximg/River_Safari_Singapore_Sign.jpg" class="w-100" alt="...">
+  </div>
+  <div class="col-md-6 p-4 ps-md-0">
+    <h5 class="mt-0">River Safari Singapore – Asia’s 1st ever river-themed Safari</h5>
+    <!-- <p>Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p> -->
+    <h6> <small> <del class="text-muted"> Rs. 76,000 </del></small> <br> Rs. 59,999</h6>
+    <a href="./riversafari.html" class="stretched-link btn "  style="background-color: #3b8d99; color: white;">Book Now</a>
+  </div>
+</div>
+
+</div>
+</div>
+</div>
+
+
+<div class="container-fluid mt-5">
+  <h1 class="text-center">International Travel & Tour Packages From karachi</h1>
+  <p>We are providing international travel and tours packages at a very reasonable price along with proper guidance. Even if you want an adventurous tour or you are looking to sail on the sea or you want to spend that amazing night in a desert/hill with your friends, family or loved ones. The moments you have desired for all your life can be accomplished with so easy that you won’t have to worry about anything our travel experts can steer you for the trip so you will have the most fabulous and memoizable experience. We are offering tour packages from Karachi to everywhere you want, we can make you fly even if it’s Pakistan, Singapore,United Arab Emirates, Maldives or any other piece of the planet earth.</p>
+</div>
+
+<div class="container-fluid">
+  <!-- <div data-aos="zoom-in"> -->
+    <div data-aos="fade-up"
+     data-aos-duration="3000">
+<div class="row">
+  
+  <div class="col-md-3"> 
+    <!-- <h4 class="text-center"><strong>STYLE 3</strong></h4> -->
+   <!-- <hr> -->
+   <div class="profile-card-4 text-center mt-4 mb-4" style="height: 600px;">
+    <a href="./pakistan.html"><img src="./images/indeximg/pak.jpg" class="img" style="width:300px; height: 300px;"></a>
+       <div class="profile-content">
+           <div class="profile-name" style=" font-family: 'Oswald', sans-serif; font-size:x-large;"><a href="./pakistan.html"> PAKISTAN </a>
+               <p>@pleasanttour</p>
+           </div>
+           <!-- <div class="profile-description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.</div> -->
+           <div class="row">
+               <div class="col-xs-4">
+                   <div class="profile-overview">
+                       <p>BEACHES</p>
+                       <h4>13</h4></div>
+               </div>
+               <div class="col-xs-4">
+                   <div class="profile-overview">
+                       <p>HILLS</p>
+                       <h4>10</h4></div>
+               </div>
+               <div class="col-xs-4">
+                   <div class="profile-overview">
+                       <p>FORTS</p>
+                       <h4>61</h4></div>
+               </div>
+           </div>
+       </div>
+   </div>
+  </div> 
+
+  <div class="col-md-3"> 
+    <!-- <h4 class="text-center"><strong>STYLE 3</strong></h4> -->
+   <!-- <hr> -->
+   <div class="profile-card-4 text-center mt-4 mb-4" style="height: 600px;">
+    <a href="./uae.html"><img src="./images/indeximg/dubai2.jpg" class="img" style="width:300px; height: 300px;"></a>
+       <div class="profile-content">
+           <div class="profile-name"  style=" font-family: 'Oswald', sans-serif; font-size:x-large;"><a href="./uae.html"> United Arab States </a>
+               <p>@pleasanttour</p>
+           </div>
+           <!-- <div class="profile-description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.</div> -->
+           <div class="row">
+               <div class="col-xs-4">
+                   <div class="profile-overview">
+                       <p>BEACHES</p>
+                       <h4>3</h4></div>
+               </div>
+               <div class="col-xs-4">
+                   <div class="profile-overview">
+                       <p>HILLS</p>
+                       <h4>304</h4></div>
+               </div>
+               <div class="col-xs-4">
+                   <div class="profile-overview">
+                       <p>FORTS</p>
+                       <h4>11</h4></div>
+               </div>
+           </div>
+       </div>
+   </div>
+  </div> 
+
+  <div class="col-md-3"> 
+    <!-- <h4 class="text-center"><strong>STYLE 3</strong></h4> -->
+   <!-- <hr> -->
+   <div class="profile-card-4 text-center mt-4 mb-4" style="height: 600px;">
+    <a href="./Sigapore.html"><img src="./images/indeximg/sg2.jpg" class="img" style="width:300px; height: 300px;"></a>
+       <div class="profile-content">
+           <div class="profile-name" style=" font-family: 'Oswald', sans-serif; font-size:x-large;"><a href="./Sigapore.html">SINGAPORE 
+           </a> 
+               <p>@pleasanttour</p>
+           </div>
+           <!-- <div class="profile-description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.</div> -->
+           <div class="row">
+               <div class="col-xs-4">
+                   <div class="profile-overview">
+                       <p>BEACHES</p>
+                       <h4>15</h4></div>
+               </div>
+               <div class="col-xs-4">
+                   <div class="profile-overview">
+                       <p>HILLS</p>
+                       <h4>58</h4></div>
+               </div>
+               <div class="col-xs-4">
+                   <div class="profile-overview">
+                       <p>FORTS</p>
+                       <h4>4</h4></div>
+               </div>
+           </div>
+       </div>
+   </div>
+  </div> 
+
+  <div class="col-md-3"> 
+    <!-- <h4 class="text-center"><strong>STYLE 3</strong></h4> -->
+   <!-- <hr> -->
+   <div class="profile-card-4 text-center mt-4 mb-4" style="height: 600px;">
+    <a href="./maldives.html"><img src="./images/indeximg/md1.jpg" class="img" style="width:300px; height: 300px;"></a>
+       <div class="profile-content">
+           <div class="profile-name" style=" font-family: 'Oswald', sans-serif; font-size:x-large;"><a href="./maldives.html"> MALDIVES </a>
+               <p>@pleasanttour</p>
+           </div>
+           <!-- <div class="profile-description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.</div> -->
+           <div class="row">
+               <div class="col-xs-4">
+                   <div class="profile-overview">
+                       <p>BEACHES</p>
+                       <h4>27</h4></div>
+               </div>
+               <div class="col-xs-4">
+                   <div class="profile-overview">
+                       <p>HILLS</p>
+                       <h4>05</h4></div>
+               </div>
+               <div class="col-xs-4">
+                   <div class="profile-overview">
+                       <p>FORTS</p>
+                       <h4>01</h4></div>
+               </div>
+           </div>
+       </div>
+   </div>
+  </div> 
+
+</div>
+
+</div>
+</div>
+
+<!-- cardandcenterimg -->
+<section id="gallery">
+  <div class="container">
+    <div class="row">
+
+    <div class="col-md-4 mb-2 mt-4">
+      
+      <div data-aos="zoom-out-right">
+    <div class="card">
+      <img src="./images/hiking.jfif" alt="" class="card-img-top ">
+      <div class="card-body">
+        <h5 class="card-title">Hiking & Trekking</h5>
+        <p class="card-text">Take a deep breath and escape to a trail where birds serenade, fresh air rejuvenates, and blue skies mesmerise. Whether connecting with the ground beneath your feet on an effortless walk, a hiking adventure is a much-needed release from the rollercoaster of life. </p>
+        
+        <!-- Button trigger modal -->
+<button type="button" class="btn btn-outline-success btn-sm"  data-bs-toggle="modal" data-bs-target="#staticBackdropz">
+  Read More
+</button>
+       <!-- <a href="" class="btn btn-outline-success btn-sm" data-toggle="modal" data-target="#exampleModal2">Read More</a> -->
+
+        <button class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i>Like</button>
+      </div>
+     </div>
+    </div>
+    </div>
+
+    <div class="col-md-4 mt-4 mb-2">
+      <img src="./images/centerimg.jpg"  style="width: 450px; height: 500px; margin-left: -50px;"   alt="">
+    </div>
+
+  <div class="col-md-4 mb-2 mt-4">
+    <div data-aos="zoom-out-left">
+  <div class="card">
+      <img src="./images/explorer.jpg" alt="" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title">Explorer</h5>
+        <p class="card-text">Calling fellow adventurers! Tossing up between a hike of Mount Fuji to admire sunrise views, a kayaking excursion on pristine Lake Louise, or even a stroll through the vineyard valleys of the Rhine? On an explorer tour, you don't have to choose. 
+          <!-- Curated to ignite your sense of adventure, entice you to try something new, and fall in love with cultures all over the world, an explorer adventure is every traveller's dream, creating the perfect overview of a country (or continent!). -->
+        </p>
+       <button class="btn btn-outline-success btn-sm"  data-bs-toggle="modal" data-bs-target="#staticBackdropf">Read More</button>
+        <button class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i>Like</button>
+      </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+  </div>
+    </div>
+    </section>
+
+    <!-- formstart -->
+    <div class="container-fluid">
+      <h2 class="mt-5 ms-2">Latest Revised Pakistan Tour Package Prices 2023</h2>
+    <div class="row">
+      <div class="col-md-9">
+<table class="table table-bordered table-striped  mb-2 ms-2 mt-5" style=" height:18%; width: 100%;">
+  <thead style="color:maroon; font-weight: bold;"> 
+    <tr>
+      <th>Best Selling Pakistan Tour Package Price</th>
+      <th>No.of Days</th>
+      <th>Price per person*</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+    <td>Super Affordable Hunza Tour</td>
+    <td>5 – 10 Days</td>
+    <td>Rs. 49,000*</td>
+  </tr>
+  <tr>
+    <td>Standard Swat Tour </td>
+    <td>3 – 7 Days</td>
+    <td>Rs. 60,000*</td>
+  </tr>
+  <tr>
+    <td>Basic Neelum Valley Tour</td>
+    <td>3 – 7 Days</td>
+    <td>Rs. 44,000*</td>
+  </tr>
+  <tr>
+    <td>Exclusive Naran Kaghan Tour</td>
+    <td>5 – 8 Days</td>
+    <td>Rs. 70,000*</td>
+  </tr>
+  <tr>
+    <td>All New Skardu Tour Packages by Air	</td>
+    <td>6 – 10 Days</td>
+    <td>Rs. 57,000*</td>
+  </tr>
+  <tr>
+    <td>Cheap Murree Tour With Family</td>
+    <td>3 – 9 Days</td>
+    <td>Rs. 75,000*</td>
+  </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="col-md-3" >
+   
+    <div class="card text-white  mb-3" style="  background: linear-gradient(to right, #aa4b6b, #6b6b83, #3b8d99); width: 230px; height: 200px; opacity: 0.9; margin-top: 85px;">
+    <!-- <div class="card-header"></div> -->
+    <div class="card-body">
+      <h5 class="card-title">Upcoming Tours</h5>
+      
+      <ul style="font-family: 'Sofia Sans Extra Condensed', sans-serif;">
+        <li>Karachi to Dubai</li>
+        <li>Dubai to Pakistan</li>
+        <li>Maldives to USA</li>
+        <li>Singapore to UAE</li>
+      </ul>
+      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+    </div>
+</div>
+</div>
+</div>
+<!-- close -->
+
+<!-- slider2 -->
+ <!-- Swiper -->
+ <div class="swiper mySwiper2">
+  <h2 class="mt-5 mb-4">Best Tour Places For EveryOne</h2>
+  <div class="swiper-wrapper">
+
+    <div class="swiper-slide"> 
+      <div class="row mt-4">
+        <div class="col-md-3"><figure><img src="./images/slider2/families.jpg" alt=""><figcaption class="figure-caption text-start">
+         <strong> Families </strong>
+        </figcaption></figure></div>
+        <div class="col-md-3"><figure><img src="./images/slider2/senior.jpg" alt=""><figcaption class="figure-caption text-start">
+         <strong> Senior </strong>
+        </figcaption></figure></div>
+        <div class="col-md-3"><figure><img src="./images/slider2/young adults.jpg" alt=""><figcaption class="figure-caption text-start">
+        <strong>  Young Adults </strong>
+        </figcaption></figure></div>
+        <div class="col-md-3"><figure><img src="./images/slider2/solo1.jpg" alt=""><figcaption class="figure-caption text-start">
+        <strong> Solo </strong>
+        </figcaption></figure></div>
+      </div>
+      </div>
+
+    <div class="swiper-slide">
+      <div class="row mt-4">
+        <div class="col-md-3"><figure><img src="./images/slider2/river cruise.jpg" alt=""><figcaption class="figure-caption text-start">
+        <strong> River Cruise </strong>
+        </figcaption></figure></div>
+        <div class="col-md-3"><figure><img src="./images/slider2/trekking.jpg" alt=""><figcaption class="figure-caption text-start">
+        <strong>  Hiking </strong> 
+        </figcaption></figure></div>
+        <div class="col-md-3"><figure><img src="./images/slider2/safari2.jpg" alt=""><figcaption class="figure-caption text-start">
+        <strong>  Safari </strong>
+        </figcaption></figure></div>
+        <div class="col-md-3"><figure><img src="./images/indeximg/cruise.jpg" alt="" style="width: 300px; height: 220px;"><figcaption class="figure-caption text-start">
+        <strong> Nature shades </strong>
+        </figcaption></figure></div>
+        </div>
+    </div>
+
+    <div class="swiper-slide">
+      <div class="row mt-4">
+        <div class="col-md-3"><figure><img src="./images/indeximg/bicycle.jpg" alt="" style="width: 300px; height: 220px;"><figcaption class="figure-caption text-start">
+        <strong> Bicycle </strong>
+        </figcaption></figure></div>
+        <div class="col-md-3"><figure><img src="./images/indeximg/food & drink tour.jpg" alt=""><figcaption class="figure-caption text-start">
+        <strong>  Food & Drinks </strong>
+        </figcaption></figure></div>
+        <div class="col-md-3"><figure><img src="./images/indeximg/maincard.jpg" alt="" style="width: 300px; height: 220px;"><figcaption class="figure-caption text-start">
+        <strong> Boating </strong>
+        </figcaption></figure></div>
+        <div class="col-md-3"><figure><img src="./images/indeximg/cruise23.jpg" alt="" style="width: 300px; height: 220px;"><figcaption class="figure-caption text-start">
+        <strong> Cruise </strong>
+        </figcaption></figure></div>
+      </div>
+    </div>
+  </div>
+  <div class="swiper-button-next mt-1"></div>
+  <div class="swiper-button-prev mt-1"></div>
+  <!-- <div class="swiper-pagination"></div> -->
+</div>
+<br>
+
+<!-- groupheading -->
+<hr style="color: maroon;">
+<br>
+<div class="container-fluid">   
+      <div class="row">
+
+        <div class="col-md-5">
+          <h2>Group Tours & Trips</h2>
+          <p>Encompassing everything from all-inclusive river cruises right down to quick camping getaways, it's safe to say that group tours have gotten a serious upgrade!  From luxury feature stays in European castles and private dinner shows, to budget safaris that perfectly encapsulate the very essence of adventure. </p>
+
+            <p class="ms-4 me-4"><img  src="./images/friends!.gif" style="width: 400px; height: 350px;" alt=""></p> 
+
+          <p> Wherever it may be, a group trip guarantees a hassle-free experience with travellers who are just as excited as you are.</p>
+        </div>
+
+        <div class="col-md-2"></div>
+
+        <div class="col-md-5">
+          <h2>Solo Tours & Trips</h2>
+          <p>Travelling solo is one of the best ways to challenge yourself and get more out of adventures! When you travel alone, you get to choose when and how! Taking holidays by yourself doesn’t mean it will be just you and a bag,  you’ll meet lots of people along the way and build meaningful connections! </p>
+
+            <p class="ms-4 me-4"><img  src="./images/mc2.gif" style="width: 400px; height: 350px;" alt=""></p> 
+
+            <p> Imagine exploring one of the best solo travel adventures to Europe, Asia or hiking etc.</p>
+        </div>
+      </div>
+      <hr style="color: maroon;">
+      <br>
+      <br>
+<!-- close -->
+      
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- overbodydivclose -->
+</div> 
+
+<section style="color:black; background-color:whitesmoke; margin-bottom: 50px;">
+  <div class="container py-5">
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-10 col-xl-8 text-center">
+        <h3 class="fw-bold mb-4"> <i class="fa-solid fa-memo-pad"> Reviews</i> </h3>
+      </div>
+    </div>
+
+    <div data-aos="fade-up">
+    <div class="row text-center">
+      
+
+      <div class="col-md-4 mb-4 mb-md-0">
+        <div class="card">
+          <div class="card-body py-4 mt-2">
+            <div class="d-flex justify-content-center mb-4">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp"
+                class="rounded-circle shadow-1-strong" width="100" height="100" />
+            </div>
+            <h5 class="font-weight-bold">Teresa May</h5>
+            <h6 class="font-weight-bold my-3">Founder at ET Company</h6>
+            <ul class="list-unstyled d-flex justify-content-center">
+              <li>
+                <i class="fas fa-star fa-sm text-warning"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-warning"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-warning"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-warning"></i>
+              </li>
+              <li>
+                <i class="fas fa-star-half-alt fa-sm text-warning"></i>
+              </li>
+            </ul>
+            <p class="mb-2">
+              <i class="fas fa-quote-left pe-2"></i>The tour was very safe, People very kind and friendly. We enjoyed beautiful landscape and interesting culture.I can definitvly recommend this tour.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4 mb-md-0">
+        <div class="card">
+          <div class="card-body py-4 mt-2">
+            <div class="d-flex justify-content-center mb-4">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(15).webp"
+                class="rounded-circle shadow-1-strong" width="100" height="100" />
+            </div>
+            <h5 class="font-weight-bold">Maggie McLoan</h5>
+            <h6 class="font-weight-bold my-3">Photographer at Studio LA</h6>
+            <ul class="list-unstyled d-flex justify-content-center">
+              <li>
+                <i class="fas fa-star fa-sm text-warning"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-warning"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-warning"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-warning"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-warning"></i>
+              </li>
+            </ul>
+            <p class="mb-2">
+              <i class="fas fa-quote-left pe-2"></i>This trip was one of my favourit tours. The guide was extraordinarily friendly and very engaged, specialy during this difficult Covid time. 
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-0">
+        <div class="card">
+          <div class="card-body py-4 mt-2">
+            <div class="d-flex justify-content-center mb-4">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(17).webp"
+                class="rounded-circle shadow-1-strong" width="100" height="100" />
+            </div>
+            <h5 class="font-weight-bold">Alexa Horwitz</h5>
+            <h6 class="font-weight-bold my-3">Front-end Developer in NY</h6>
+            <ul class="list-unstyled d-flex justify-content-center">
+              <li>
+                <i class="fas fa-star fa-sm text-warning"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-warning"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-warning"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-warning"></i>
+              </li>
+              <li>
+                <i class="far fa-star fa-sm text-warning"></i>
+              </li>
+            </ul>
+            <p class="mb-2">
+              <i class="fas fa-quote-left pe-2"></i>Owner and Staffs of this company, all I know, are very professional and highly educated . Also they have great success and command over Pakistan's tourism.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+
+
+<!-- Footer -->
+<footer class="text-center text-lg-start  " >
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4  border-bottom " style="background-color: maroon; color: white;">
+    <!-- Left -->
+    <div class=" me-5 d-lg-block" >
+      <span ><h5 style="margin-left: -10px;"> Get connected with us on social networks: </h5></span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="https://www.facebook.com/login.php" class="me-4 link-secondary" >
+        <!-- <i class="fab fa-facebook-f"></i> -->
+        <i class="fa-brands fa-facebook-f" style="color: white;"></i>
+      </a>
+      <a href="https://twitter.com/login" class="me-4 link-secondary">
+        <i class="fab fa-twitter" style="color: white;"></i>
+      </a>
+      <a href="https://mail.google.com/" class="me-4 link-secondary">
+        <i class="fab fa-google" style="color: white;"></i>
+      </a>
+      <a href="https://www.instagram.com/accounts/login/" class="me-4 link-secondary">
+        <i class="fab fa-instagram" style="color: white;"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- nextline -->
+  <div class="container-fluid section1">
+    <div class="row">
+      
+      <div class=" col-md-3 mt-2">
+        <h3>Company</h3>
+        <ul class="list-unstyled" >
+          <li>About us</li>
+          <li>Career</li>
+        </ul>
+
+        <hr>
+        
+          <h3>Support</h3>
+          <ul class="list-unstyled">
+            <li>Contact us</li>
+            <li>Help Center</li>           
+          </ul> 
+          </div>
+
+        <div class="col-md-3 mt-2">
+          <h3>Traveler</h3>
+        <ul style="list-style: none; margin-left: -25px;">
+          <li>Days to come Magzine</li>
+          <li>Win an Adventure</li>
+          
+          </ul>
+          <hr>
+          <h3>Travel Advisors</h3>
+          <ul style="list-style: none; margin-left: -25px;">
+            <li>Travel Advisors / Agents</li>
+            <li>Advisor Lodin</li>
+            <li>After your booking</li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 mt-2">
+          <h3>Product</h3>
+          <ul style="list-style: none; margin-left: -25px;">
+            <li>Beach Tour</li>
+            <li>Hill Station</li>
+            <li>Fort & Places</li>
+          </ul>
+          <h3>Rate Our Website</h3>
+          <li class="fa fa-star" style="color:orange;"></li>
+          <li class="fa fa-star" style="color:orange;"></li>
+          <li class="fa fa-star" style="color:orange;"></li>
+          <li class="fa fa-star" style="color:orange;"></li>
+          <li class="fa fa-star-half-alt" style="color:orange;"></li>
+        </div>
+      
+      <div class="col-md-3 mt-2">
+        <h3>Our Work</h3>
+        <img class="" src="./images/hikingg.jpg" style="width: 100px;height: 70px;" alt="" />
+        <img class="" src="./images/4.jpg" style="width: 100px;height: 70px;" alt="" /><br>
+        <img class="mt-1 mb-1" src="./images/HD-wallpaper-happy-sailing-visitors-group-a-of.jpg" style="width: 100px;height: 70px;" alt="" />
+        <img class="mt-1 mb-1" src="./images/1.jpg " style="width: 100px;height: 70px;" alt="" />
+      </div>
+      
+    </div>
+  </div>
+  
+  <div class="copyright text-center" style="background-color:maroon; color: white;">
+    Created By :  Ariba & Areesha &copy; 2023 <span>Pleasant Tour</span>
+  </div>
+</footer>
+<!-- Footerclose -->
+
+<!-- modalforcard2 -->
+<!-- Modal -->
+  <div class="modal fade" id="staticBackdropf" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabelf" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabelf">Explorer</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Calling fellow adventurers! Tossing up between a hike of Mount Fuji to admire sunrise views, a kayaking excursion on pristine Lake Louise, or even a stroll through the vineyard valleys of the Rhine? On an explorer tour, you don't have to choose dolor sit amet consectetur adipisicing elit. Omnis corrupti ea ducimus ad cupiditate, eum voluptatum. Doloremque recusandae a tempora ex suscipit perspiciatis dolor quisquam voluptas assumenda! Ullam nobis fuga dolores alias saepe. Error perferendis similique fugiat inventore, cum odio repellat quibusdam itaque sunt, at ipsam iusto dolorum hic est! Optio labore voluptatibus ea debitis qui aliquam est nobis quasi alias, blanditiis doloribus voluptatem culpa quidem dolore magnam eveniet illum nisi porro pariatur deleniti totam? Quo sint magnam vel sit nemo tempore quas natus officiis quod animi ab voluptatum, incidunt provident, a nam autem ut necessitatibus tempora unde deserunt quasi!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" style="color: white; background-color: #3b8d99 ; color: white;" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn" style="background-color: orange; color: white;">Understood</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  
+   <!-- modalcard1 -->
+   <!-- Modal -->
+  <div class="modal fade" id="staticBackdropz" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabelz" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabelz">Hiking & Trekking</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Take a deep breath and escape to a trail where birds serenade, fresh air rejuvenates, and blue skies mesmerise. Whether connecting with the ground beneath your feet on an effortless walk, a hiking adventure is a much-needed release from the rollercoaster of life dolor, sit amet consectetur adipisicing elit. Laborum ratione, ad ipsam omnis qui temporibus impedit numquam, consequuntur, pariatur accusamus et neque odio molestias unde exercitationem nemo facere quo atque rem magnam dolor natus! Cupiditate facilis impedit tempore consectetur omnis aliquid quo sapiente itaque! Doloribus accusamus inventore natus assumenda quis! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt, ab. Nulla numquam exercitationem illo beatae eaque est, asperiores in vitae, consequuntur ut fugiat ratione quas nobis quam ullam sapiente rerum hic quaerat, praesentium explicabo eius voluptas molestiae modi eum. Consectetur vitae nulla, in laudantium sed magni necessitatibus nesciunt repellat iste.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" style=" color: white; background-color: #3b8d99; color: white;" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn" style="background-color: orange; color: white;">Understood</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- modal for login -->
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop11" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel11" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel11">Login! Here</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <div class="container-fluid">
+                <form>
+                  <div class="form-group m-3">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted" >We'll never share your email with anyone else.</small>
+                  </div>
+                  <div class="form-group m-3">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                  </div>
+                  <div class="form-check m-3">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Save information</label>
+                  </div>
+                  
+                </form>
+              </div>
+              <!-- </div> -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn" style="background-color: #3b8d99; color: white;">LOGIN</button>
+            </div>
+          <!-- </div> -->
+        </div>
+        </div>
+        </div>
+      </div>
+      
+    <script src="./js/jquery-3.6.3.min.js"></script>  
+    <script src="./js/bootstrap.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script>
+      // animationjs
+      AOS.init();
+      
+      // slider2
+      var swiper = new Swiper(".mySwiper2", 
+      {
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+      
+    var menuButton = document.querySelector('.menu-button');
+    var openMenu = function () {
+      swiper.slidePrev();
+    };
+    var swiper = new Swiper('.swiper', {
+      slidesPerView: 'auto',
+      initialSlide: 1,
+      resistanceRatio: 0,
+      slideToClickedSlide: true,
+      on: {
+        slideChangeTransitionStart: function () {
+          var slider = this;
+          if (slider.activeIndex === 0) {
+            menuButton.classList.add('cross');
+            // required because of slideToClickedSlide
+            menuButton.removeEventListener('click', openMenu, true);
+          } else {
+            menuButton.classList.remove('cross');
+          }
+        },
+        slideChangeTransitionEnd: function () {
+          var slider = this;
+          if (slider.activeIndex === 1) {
+            menuButton.addEventListener('click', openMenu, true);
+          }
+        },
+      },
+    }); 
+    // close
+    </script>
+
+</body>
+</html> 
